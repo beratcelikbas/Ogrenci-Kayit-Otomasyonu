@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5BF30DB-2B79-41D4-A367-058C0FFAB923}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LikePansiyonOtomasyon</RootNamespace>
+    <AssemblyName>LikePansiyonOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.v12.12.0.0.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminGiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiriş.Designer.cs">
+      <DependentUpon>AdminGiriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelirIstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelirIstatistik.Designer.cs">
+      <DependentUpon>GelirIstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giderler.Designer.cs">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiderListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderListesi.Designer.cs">
+      <DependentUpon>GiderListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LikePansiyonKayitDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LikePansiyonKayitDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Not.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Not.Designer.cs">
+      <DependentUpon>Not.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odemeler.Designer.cs">
+      <DependentUpon>Odemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrDuzenle.Designer.cs">
+      <DependentUpon>OgrDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrKayit.Designer.cs">
+      <DependentUpon>OgrKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrListe.Designer.cs">
+      <DependentUpon>OgrListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="YöneticiPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiPaneli.Designer.cs">
+      <DependentUpon>YöneticiPaneli.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminGiriş.resx">
+      <DependentUpon>AdminGiriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelirIstatistik.resx">
+      <DependentUpon>GelirIstatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giderler.resx">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderListesi.resx">
+      <DependentUpon>GiderListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Not.resx">
+      <DependentUpon>Not.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odemeler.resx">
+      <DependentUpon>Odemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrDuzenle.resx">
+      <DependentUpon>OgrDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrKayit.resx">
+      <DependentUpon>OgrKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrListe.resx">
+      <DependentUpon>OgrListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="YöneticiPaneli.resx">
+      <DependentUpon>YöneticiPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LikePansiyonKayitDataSet.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet.xss">
+      <DependentUpon>LikePansiyonKayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet1.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet1.xss">
+      <DependentUpon>LikePansiyonKayitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet2.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet2.xss">
+      <DependentUpon>LikePansiyonKayitDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet3.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet3.xss">
+      <DependentUpon>LikePansiyonKayitDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet4.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet4.xss">
+      <DependentUpon>LikePansiyonKayitDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet5.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet5.xss">
+      <DependentUpon>LikePansiyonKayitDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet6.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet6.xss">
+      <DependentUpon>LikePansiyonKayitDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet7.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet7.xss">
+      <DependentUpon>LikePansiyonKayitDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet8.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet8.xss">
+      <DependentUpon>LikePansiyonKayitDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet9.xsc">
+      <DependentUpon>LikePansiyonKayitDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="LikePansiyonKayitDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LikePansiyonKayitDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LikePansiyonKayitDataSet9.xss">
+      <DependentUpon>LikePansiyonKayitDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25411.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Likepansiyon_logo_Çalışma Yüzeyi 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Likepansiyon_logo_Çalışma Yüzeyi 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takvim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a_Çalışma Yüzeyi 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_Çalışma Yüzeyi 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c_Çalışma Yüzeyi 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\köle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d_Çalışma Yüzeyi 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e_Çalışma Yüzeyi 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istatistik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ödeme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Likepansiyon_logo_Çalışma Yüzeyi 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cikis1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\222.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\138-1383629_calendrier-clipart-calendar-png-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giderler düzenleme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ödeme1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_Çalışma Yüzeyi 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a_Çalışma Yüzeyi 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c_Çalışma Yüzeyi 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\köle1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
